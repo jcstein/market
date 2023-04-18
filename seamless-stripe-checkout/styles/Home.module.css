@@ -1,0 +1,92 @@
+.container {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 0 24px;
+}
+
+.h1 {
+  margin-bottom: 0px;
+}
+
+.explain {
+  font-size: 1.125rem;
+}
+
+.purple {
+  color: #9f2c9d;
+}
+
+.divider {
+  width: 50%;
+  border-color: grey;
+  opacity: 0.25;
+}
+
+.mainButton {
+  cursor: pointer;
+  display: inline-flex;
+  appearance: none;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 1.2;
+  font-weight: 600;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  height: 3rem;
+  min-width: 3rem;
+  font-size: 1rem;
+  background: #e5e5ea;
+  background-image: linear-gradient(to left, #cc25b3 0%, #418dff 101.52%);
+  color: #fff;
+  width: 180px;
+  text-align: center;
+  border-radius: 9999px;
+  outline: none;
+  border: none;
+}
+
+.mainButton:hover {
+  opacity: 0.8;
+}
+
+.textInput {
+  width: 75%;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 8px;
+  color: #fff;
+  height: 48px;
+  padding: 0 16px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.textInput:focus {
+  outline: none;
+}
+
+.payButton {
+  margin: 20px auto;
+  align-self: center;
+}
+
+.PaymentForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nftCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
