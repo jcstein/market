@@ -57,7 +57,7 @@ const Home: NextPage = () => {
 
               <div className={styles.heroCtaContainer}>
                 <Link className={styles.heroCta} href="/buy">
-                  Get Started
+                  Browse
                 </Link>
                 <Link
                   className={styles.secondaryCta}
