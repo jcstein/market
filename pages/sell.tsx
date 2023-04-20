@@ -25,7 +25,7 @@ export default function Sell() {
       <h1>Sell NFTs</h1>
       {!selectedNft ? (
         <>
-          <p>Select which NFT you&rsquo;d like to sell below.</p>
+          <p>Connect your wallet to select which NFT you&rsquo;d like to sell below.</p>
           <NFTGrid
             data={data}
             isLoading={isLoading}
