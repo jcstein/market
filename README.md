@@ -1,5 +1,9 @@
 # NFT Marketplace V3
 
+## Demo contract
+
+View the contract [here](https://thirdweb.com/sepolia/0x764654d0A37e89519AD04534a90D2E183760AB59).
+
 Create an NFT marketplace on top of your NFT collection on **any** EVM-compatible blockchain.
 
 ## Features
