@@ -52,7 +52,7 @@ const Home: NextPage = () => {
                   Celestia
                 </Link>{" "}
                 gives you the tools you need to create performant and
-                flexible rollups <b>hours</b>, <i>not months</i>.
+                flexible rollups in <b>hours</b>, <i>not months</i>.
               </p>
 
               <div className={styles.heroCtaContainer}>
