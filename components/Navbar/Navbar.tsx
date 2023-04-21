@@ -16,10 +16,10 @@ export function Navbar() {
         <div className={styles.navLeft}>
           <Link href="/" className={`${styles.homeLink} ${styles.navLeft}`}>
             <Image
-              src="/celestia.svg"
+              src="/purple.svg"
               width={48}
               height={48}
-              alt="Celestia Logo"
+              alt="purple circle Logo"
             />
           </Link>
 
