@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider activeChain={NETWORK}>
        <Head>
-        <title>build market</title>
+        <title>liquid based</title>
        </Head>
       {/* Progress bar when navigating between pages */}
       <NextNProgress
