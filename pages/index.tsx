@@ -29,7 +29,7 @@ const Home: NextPage = () => {
             src="/background_7.svg"
             width={100}
             height={100}
-            style={{ borderRadius: "100%", width: "50%", height: "auto" }}
+            style={{ borderRadius: "100%", width: "42%", height: "42%" }}
             alt="Hero asset, NFT marketplace"
             quality={100}
             className={styles.heroAsset}
