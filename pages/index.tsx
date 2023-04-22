@@ -46,7 +46,7 @@ const Home: NextPage = () => {
               <p className={styles.heroSubtitle}>
                 <Link
                   className={styles.link}
-                  href="https://thirdweb.com"
+                  href="https://celestia.org"
                   target="_blank"
                 >
                   Celestia
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
               </p>
 
               <div className={styles.heroCtaContainer}>
-                <Link className={styles.heroCta} href="/buy">
+                <Link className={styles.heroCta} href="/browse">
                   Browse
                 </Link>
                 <Link

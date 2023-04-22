@@ -3,11 +3,15 @@ import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { Navbar } from "../components/Navbar/Navbar";
 import NextNProgress from "nextjs-progressbar";
 import { NETWORK } from "../const/contractAddresses";
+import Head from "next/head";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider activeChain={NETWORK}>
+       <Head>
+        <title>build market</title>
+       </Head>
       {/* Progress bar when navigating between pages */}
       <NextNProgress
         color="var(--color-tertiary)"
