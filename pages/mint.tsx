@@ -1,29 +1,69 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "../components/Container/Container";
+import {
+  Web3Button,
+  ThirdwebNftMedia,
+  useNFT,
+  useContract,
+  useMetadata
+} from "@thirdweb-dev/react";
+
+// TODO: add number minted/total supply
+interface CustomContractMetadata {
+  name: string;
+  description?: string;
+  image?: any;
+  external_link?: string;
+}
+
+function NFTDisplay({ contractAddress }: { contractAddress: string }) {
+  const { contract } = useContract(contractAddress);
+  const { data: nft, isLoading, error } = useNFT(contract, "0");
+  const { data: metadata, isLoading: metadataIsLoading } = useMetadata(contract) as {
+    data: CustomContractMetadata | undefined;
+    isLoading: boolean;
+    error: any;
+  };
+
+  if (isLoading) return <div style={{ textAlign: "center" }}>⏳ loading...</div>;
+  if (error || !nft) return <div style={{ textAlign: "center" }}>NFT not found</div>;
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <h1><code>{metadata?.name}</code></h1>
+      <ThirdwebNftMedia metadata={nft.metadata} controls={true} />
+      <br />
+      <Web3Button
+        contractAddress={contractAddress}
+        action={(contract) => contract.erc721.claim(1)}
+        onError={(error) => alert("Claim limit reached!")}
+        theme="dark"
+      >
+        Claim an NFT from the {metadata?.name} collection!
+      </Web3Button>
+      <br />
+      {metadataIsLoading ? (
+        <p style={{ textAlign: "center" }}>Loading description...</p>
+      ) : (
+        <code style={{ textAlign: "center" }}>{metadata?.description || "No description available"}</code>
+      )}
+      <br />
+    </div>
+  );
+}
 
 export default function Mint() {
   return (
     <Container maxWidth="lg">
-    <h1>Mint NFTs</h1>
-    <p>Connect your wallet mint an NFT from a featured collection below.</p>
-    <p>This will be a connection to <code>https://ipfs.thirdwebcdn.com</code>, separate from <code>https://celestia-market.vercel.app</code>.</p>
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <iframe
-        src="https://ipfs.thirdwebcdn.com/ipfs/QmfK9mw9eQKE9vCbtZht9kygpkNWffdwibsJPnCo7MBN4M/erc721.html?contract=0x7e9a8Bc504ACBED631ab7a7E8216FCe0156c9a3c&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D&theme=dark"
-        width="600px"
-        height="600px"
-        frameBorder="0"
-      ></iframe>
-    </div>
-    <br/>
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <iframe
-        src="https://ipfs.thirdwebcdn.com/ipfs/QmfK9mw9eQKE9vCbtZht9kygpkNWffdwibsJPnCo7MBN4M/erc721.html?contract=0xD6C1f28eC5b025a618fd3733d7e6Af329a19508A&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D&theme=dark"
-        width="600px"
-        height="600px"
-        frameBorder="0"
-      ></iframe>
-    </div>
-  </Container>
+      <h1>Mint NFTs</h1>
+      <p>
+        Connect your wallet mint an NFT from a featured collection below.
+      </p>
+      <NFTDisplay contractAddress="0xE779611601CAF368A2e82ef115f466061Cd11971" />
+      <NFTDisplay contractAddress="0x7e9a8Bc504ACBED631ab7a7E8216FCe0156c9a3c" />
+      <NFTDisplay contractAddress="0xD6C1f28eC5b025a618fd3733d7e6Af329a19508A" />
+      <NFTDisplay contractAddress="0x4a87e1E9918E3b96d75E3A0c27cfE1a89e8d4102" />
+      <NFTDisplay contractAddress="0x4290CeA136B5a0c4c96D242255797f9546dCC88f" />
+    </Container>
   );
 }
