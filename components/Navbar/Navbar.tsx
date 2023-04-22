@@ -23,13 +23,9 @@ export function Navbar() {
               style={{ borderRadius: "100%" }}
             />
           </Link>
-
           <div className={styles.navMiddle}>
             <Link href="/browse" className={styles.link}>
               Browse
-            </Link>
-            <Link href="/mint" className={styles.link}>
-              Mint
             </Link>
             <Link href="/sell" className={styles.link}>
               Sell

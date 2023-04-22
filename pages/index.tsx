@@ -25,14 +25,15 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.heroAssetFrame}>
-            <Image
-              src="/data_availability.svg"
-              width={860}
-              height={540}
-              alt="Hero asset, NFT marketplace"
-              quality={100}
-              className={styles.heroAsset}
-            />
+          <Image
+            src="/background_7.svg"
+            width={100}
+            height={100}
+            style={{ borderRadius: "100%", width: "50%", height: "auto" }}
+            alt="Hero asset, NFT marketplace"
+            quality={100}
+            className={styles.heroAsset}
+          />
           </div>
           <div className={styles.heroBodyContainer}>
             <div className={styles.heroBody}>
