@@ -27,11 +27,11 @@ export function Navbar() {
             <Link href="/browse" className={styles.link}>
               Browse
             </Link>
-            <Link href="/sell" className={styles.link}>
-              Sell
-            </Link>
             <Link href="/mint" className={styles.link}>
               Mint
+            </Link>
+            <Link href="/sell" className={styles.link}>
+              Sell
             </Link>
           </div>
         </div>
