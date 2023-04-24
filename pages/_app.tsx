@@ -5,12 +5,11 @@ import NextNProgress from "nextjs-progressbar";
 import { NETWORK } from "../const/contractAddresses";
 import Head from "next/head";
 import "../styles/globals.css";
-import { Goerli } from "@thirdweb-dev/chains";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider activeChain={{
-      ...Goerli,
+      ...NETWORK,
       rpc: ["https://rpc.ankr.com/eth_goerli"],
       }}
     >

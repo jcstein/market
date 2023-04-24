@@ -11,7 +11,7 @@ export const MARKETPLACE_ADDRESS = "0xD13a7e0cF5Df24d9563C8a0A6407Ad39612fc469";
 
 // 3. The address of your NFT collection smart contract.
 export const NFT_COLLECTION_ADDRESS =
-  "0x7e9a8Bc504ACBED631ab7a7E8216FCe0156c9a3c";
+  "0xDc8f50d418B3e1cb32371A017978969bf2a40600";
 
 // (Optional) Set up the URL of where users can view transactions on
 // For example, below, we use Mumbai.polygonscan to view transactions on the Mumbai testnet.

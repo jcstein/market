@@ -35,7 +35,7 @@ function NFTDisplay({ contractAddress }: { contractAddress: string }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
       <h1><code>{metadata?.name}</code></h1>
-      <ThirdwebNftMedia metadata={nft.metadata} controls={true}             style={{ borderRadius: "10%", minWidth:"150px", width: "42%", height: "42%" }} />
+      <ThirdwebNftMedia metadata={nft.metadata} controls={true} style={{ borderRadius: "10%", minWidth:"150px", width: "42%", height: "42%" }} />
       <br />
       <Web3Button
         contractAddress={contractAddress}
@@ -67,7 +67,7 @@ export default function Browse() {
 
   return (
     <Container maxWidth="lg">
-       <h1>Browse NFTs from the <code>liquid v2</code> collection.</h1>
+       <h1>Browse NFTs from the <code>liquid v5</code> collection.</h1>
       <NFTGrid
         data={data}
         isLoading={isLoading}

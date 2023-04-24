@@ -39,10 +39,10 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Non-fungible
+                  Taking non-fungible
                 </span>
                 <br />
-                rolled up.
+                and rolling it up.
               </h1>
               <p className={styles.heroSubtitle}>
                 <Link
