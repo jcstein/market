@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider activeChain={NETWORK}>
        <Head>
-        <title>liquid based</title>
+        <title>build market</title>
         <script defer data-domain="liquidbased.xyz" src="https://plausible.io/js/script.js"></script>
        </Head>
       {/* Progress bar when navigating between pages */}
