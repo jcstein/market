@@ -5,10 +5,15 @@ import NextNProgress from "nextjs-progressbar";
 import { NETWORK } from "../const/contractAddresses";
 import Head from "next/head";
 import "../styles/globals.css";
+import { Goerli } from "@thirdweb-dev/chains";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={NETWORK}>
+    <ThirdwebProvider activeChain={{
+      ...Goerli,
+      rpc: ["https://rpc.ankr.com/eth_goerli"],
+      }}
+    >
        <Head>
         <title>build market</title>
         <script defer data-domain="liquidbased.xyz" src="https://plausible.io/js/script.js"></script>
