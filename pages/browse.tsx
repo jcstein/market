@@ -35,7 +35,7 @@ function NFTDisplay({ contractAddress }: { contractAddress: string }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
       <h1><code>{metadata?.name}</code></h1>
-      <ThirdwebNftMedia metadata={nft.metadata} controls={true} />
+      <ThirdwebNftMedia metadata={nft.metadata} controls={true}             style={{ borderRadius: "10%", minWidth:"150px", width: "42%", height: "42%" }} />
       <br />
       <Web3Button
         contractAddress={contractAddress}
@@ -55,6 +55,7 @@ function NFTDisplay({ contractAddress }: { contractAddress: string }) {
       <a style={{ textAlign: "center" }} href={openseaLink} target="_blank" rel="noopener noreferrer">
         <code>Click to view {metadata?.name} collection on OpenSea 🌊</code>
       </a>
+      <br/>
     </div>
   );
 }
@@ -66,6 +67,15 @@ export default function Browse() {
 
   return (
     <Container maxWidth="lg">
+       <h1>Browse NFTs from the <code>liquid v2</code> collection.</h1>
+      <NFTGrid
+        data={data}
+        isLoading={isLoading}
+        emptyText={
+          "Looks like there are no NFTs in this collection. Did you import your contract on the thirdweb dashboard? https://thirdweb.com/dashboard"
+        }
+      />
+      <br/>
       <h1>Mint from your favorite collections</h1>
       <p>
         Connect your wallet mint an NFT from a featured collection below.
@@ -77,14 +87,6 @@ export default function Browse() {
       {/* <NFTDisplay contractAddress="0x4760EE6cA5a77fb71bbc83504B9a9F120D838f41" /> */}
       <NFTDisplay contractAddress="0x4a87e1E9918E3b96d75E3A0c27cfE1a89e8d4102" />
       <NFTDisplay contractAddress="0x4290CeA136B5a0c4c96D242255797f9546dCC88f" />
-      <h1>Browse NFTs from the <code>liquid v2</code> collection.</h1>
-      <NFTGrid
-        data={data}
-        isLoading={isLoading}
-        emptyText={
-          "Looks like there are no NFTs in this collection. Did you import your contract on the thirdweb dashboard? https://thirdweb.com/dashboard"
-        }
-      />
     </Container>
   );
 }

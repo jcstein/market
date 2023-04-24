@@ -29,7 +29,7 @@ const Home: NextPage = () => {
             src="/background_7.svg"
             width={100}
             height={100}
-            style={{ borderRadius: "100%", minWidth:"250px", width: "42%", height: "42%" }}
+            style={{ borderRadius: "10%", minWidth:"150px", width: "42%", height: "42%" }}
             alt="Hero asset, NFT marketplace"
             quality={100}
             className={styles.heroAsset}
@@ -39,10 +39,10 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  NFTs are going
+                  Non-fungible
                 </span>
                 <br />
-                modular.
+                rolled up.
               </h1>
               <p className={styles.heroSubtitle}>
                 <Link

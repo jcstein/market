@@ -53,8 +53,8 @@
 .heroAssetFrame {
   display: flex;
   justify-content: center;
-  margin: 64px auto 0;
-  padding: 2em;
+  margin: 30px auto 0;
+  padding: 4em;
   overflow: hidden;
 }
 
