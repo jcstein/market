@@ -16,7 +16,7 @@ export function Navbar() {
         <div className={styles.navLeft}>
           <Link href="/" className={`${styles.homeLink} ${styles.navLeft}`}>
             <Image
-              src="/background_13.svg"
+              src="/background_7.svg"
               width={48}
               height={48}
               alt="purple circle Logo"
