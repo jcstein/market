@@ -45,15 +45,15 @@ const Home: NextPage = () => {
                 rolled up.
               </h1>
               <p className={styles.heroSubtitle}>
+                Welcome to the {" "}
                 <Link
                   className={styles.link}
                   href="https://celestia.org"
                   target="_blank"
                 >
-                  Celestia
-                </Link>{" "}
-                gives you the foundation you need to create a performant and
-                flexible rollup in <b>hours</b>, <i>not months</i>.
+                  build market
+                </Link>
+                , the home of <i>generative art</i> on Celestia.
               </p>
 
               <div className={styles.heroCtaContainer}>
