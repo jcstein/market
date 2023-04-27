@@ -25,7 +25,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         height={3}
         showOnShallow={true}
       />
-
       {/* Render the navigation menu above each component */}
       <Navbar />
       {/* Render the actual component (page) */}

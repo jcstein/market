@@ -11,9 +11,9 @@
     "deploy": "next build && next export && npx thirdweb@latest upload out"
   },
   "dependencies": {
-    "@thirdweb-dev/chains": "^0.1.11",
-    "@thirdweb-dev/react": "^3.11.7",
-    "@thirdweb-dev/sdk": "^3.10.10",
+    "@thirdweb-dev/chains": "^0.1.12",
+    "@thirdweb-dev/react": "^3.11.8",
+    "@thirdweb-dev/sdk": "^3.10.11",
     "ethers": "^5.7.2",
     "next": "^13",
     "nextjs-progressbar": "^0.0.16",
