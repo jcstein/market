@@ -24,6 +24,11 @@ import Skeleton from "../../../components/Skeleton/Skeleton";
 import toast, { Toaster } from "react-hot-toast";
 import toastStyle from "../../../util/toastConfig";
 
+interface Attribute {
+  trait_type: string;
+  value: string;
+}
+
 type Props = {
   nft: NFT;
   contractMetadata: any;
@@ -132,17 +137,16 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
               <h3 className={styles.descriptionTitle}>Traits</h3>
 
               <div className={styles.traitsContainer}>
-                {Object.values(nft?.metadata?.attributes || {}).map(
-                  // @ts-ignore
-                  (attr) => (
-                    <div className={styles.traitContainer} key={attr.value}>
-                      <p className={styles.traitName}>{attr.trait_type}</p>
-                      <p className={styles.traitValue}>
-                        {attr.value}
-                      </p>
-                    </div>
+              {Object.values(nft?.metadata?.attributes || {}).map(
+                  (attr: Attribute) => (
+                      <div className={styles.traitContainer} key={attr.value}>
+                          <p className={styles.traitName}>{attr.trait_type}</p>
+                          <p className={styles.traitValue}>
+                              {attr.value}
+                          </p>
+                      </div>
                   )
-                )}
+              )}
               </div>
 
               <h3 className={styles.descriptionTitle}>History</h3>
