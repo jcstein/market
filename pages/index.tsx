@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                 >
                   build market
                 </Link>
-                , the home of <i>generative art</i> on Celestia.
+                , the first generative art marketplace on Celestia.
               </p>
 
               <div className={styles.heroCtaContainer}>
