@@ -138,6 +138,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
 
               <div className={styles.traitsContainer}>
               {Object.values(nft?.metadata?.attributes || {}).map(
+                  // @ts-ignore
                   (attr: Attribute) => (
                       <div className={styles.traitContainer} key={attr.value}>
                           <p className={styles.traitName}>{attr.trait_type}</p>
