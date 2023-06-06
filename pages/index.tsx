@@ -55,7 +55,6 @@ const Home: NextPage = () => {
                 </Link>
                 , the first generative art marketplace on Celestia.
               </p>
-
               <div className={styles.heroCtaContainer}>
                 <Link className={styles.heroCta} href="/browse">
                   Browse
