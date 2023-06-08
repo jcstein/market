@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                 rolled up.
               </h1>
               <p className={styles.heroSubtitle}>
-                Welcome to the {" "}
+                Welcome to {" "}
                 <Link
                   className={styles.link}
                   href="https://celestia.org"
