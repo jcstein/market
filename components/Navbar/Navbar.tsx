@@ -28,7 +28,7 @@ export function Navbar() {
               👀 Browse
             </Link>
             <Link href="/mint" className={styles.link}>
-              💎 Mint
+              🌿 Mint
             </Link>
             <Link href="/sell" className={styles.link}>
               🏷️ Sell
