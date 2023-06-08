@@ -25,13 +25,16 @@ export function Navbar() {
           </Link>
           <div className={styles.navMiddle}>
             <Link href="/browse" className={styles.link}>
-              Browse
+              👀 Browse
             </Link>
             <Link href="/mint" className={styles.link}>
-              Mint
+              💎 Mint
             </Link>
             <Link href="/sell" className={styles.link}>
-              Sell
+              🏷️ Sell
+            </Link>
+            <Link href="https://tarotestnet.com" className={styles.link}>
+              🚰 Faucet
             </Link>
           </div>
         </div>
