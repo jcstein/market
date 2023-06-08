@@ -67,15 +67,17 @@ export default function Browse() {
 
   return (
     <Container maxWidth="lg">
-       <h1>Browse NFTs from the <code>liquid v1</code> collection.</h1>
-      <NFTGrid
-        data={data}
-        isLoading={isLoading}
-        emptyText={
-          "Looks like there are no NFTs in this collection. Did you import your contract on the thirdweb dashboard? https://thirdweb.com/dashboard"
-        }
-      />
-      <br/>
+      <h1>Mint from your favorite collections</h1>
+      <p>
+        Connect your wallet mint an NFT from a featured collection below.
+      </p>
+      <NFTDisplay contractAddress="0xA5d477AcD014cEEe1A696E13d5ef2dfa0eF93021" />
+      {/* <NFTDisplay contractAddress="0xE779611601CAF368A2e82ef115f466061Cd11971" />
+      <NFTDisplay contractAddress="0x7e9a8Bc504ACBED631ab7a7E8216FCe0156c9a3c" />
+      <NFTDisplay contractAddress="0xD6C1f28eC5b025a618fd3733d7e6Af329a19508A" /> */}
+      {/* <NFTDisplay contractAddress="0x4760EE6cA5a77fb71bbc83504B9a9F120D838f41" /> */}
+      {/* <NFTDisplay contractAddress="0x4a87e1E9918E3b96d75E3A0c27cfE1a89e8d4102" />
+      <NFTDisplay contractAddress="0x4290CeA136B5a0c4c96D242255797f9546dCC88f" /> */}
     </Container>
   );
 }

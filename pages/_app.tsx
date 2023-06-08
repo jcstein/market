@@ -8,14 +8,10 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={{
-      ...NETWORK,
-      rpc: ["https://rpc.ankr.com/eth_goerli"],
-      }}
-    >
+    <ThirdwebProvider activeChain={NETWORK}>
        <Head>
         <title>build market</title>
-        <script defer data-domain="liquidbased.xyz" src="https://plausible.io/js/script.js"></script>
+        <script defer data-domain="buildmarket.xyz" src="https://plausible.io/js/script.js"></script>
        </Head>
       {/* Progress bar when navigating between pages */}
       <NextNProgress
