@@ -4,7 +4,7 @@
 
 View the marketplace contract [here](https://thirdweb.com/goerli/0xD13a7e0cF5Df24d9563C8a0A6407Ad39612fc469).
 
-View the collection contract [here](https://thirdweb.com/goerli/0xD6C1f28eC5b025a618fd3733d7e6Af329a19508A)
+View the collection contract [here](https://thirdweb.com/taro-testnet/0x3FEe36e0aa4A3e3E194Dbf089054811Ae104bBB0)
 
 Create an NFT marketplace on top of your NFT collection on **any** EVM-compatible blockchain.
 
