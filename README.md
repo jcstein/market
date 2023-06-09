@@ -2,9 +2,9 @@
 
 ## Demo contracts
 
-View the marketplace contract [here](https://thirdweb.com/goerli/0xD13a7e0cF5Df24d9563C8a0A6407Ad39612fc469).
+View the marketplace contract [here](https://thirdweb.com/taro-testnet/0x3FEe36e0aa4A3e3E194Dbf089054811Ae104bBB0).
 
-View the collection contract [here](https://thirdweb.com/taro-testnet/0x3FEe36e0aa4A3e3E194Dbf089054811Ae104bBB0)
+View the collection contract [here](https://thirdweb.com/taro-testnet/0xA5d477AcD014cEEe1A696E13d5ef2dfa0eF93021).
 
 Create an NFT marketplace on top of your NFT collection on **any** EVM-compatible blockchain.
 
