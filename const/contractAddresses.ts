@@ -2,8 +2,8 @@
 
 // 1. Set up the network your smart contracts are deployed to.
 // First, import the chain from the package, then set the NETWORK variable to the chain.
-import { TaroTestnet } from "@thirdweb-dev/chains";
-export const NETWORK = TaroTestnet;
+import { BubsTestnet } from "@thirdweb-dev/chains";
+export const NETWORK = BubsTestnet;
 
 // 2. The address of the marketplace V3 smart contract.
 // Deploy your own: https://thirdweb.com/thirdweb.eth/MarketplaceV3
@@ -15,4 +15,4 @@ export const NFT_COLLECTION_ADDRESS =
 
 // (Optional) Set up the URL of where users can view transactions on
 // For example, below, we use Mumbai.polygonscan to view transactions on the Mumbai testnet.
-export const ETHERSCAN_URL = "https://explorer.tarotestnet.com/";
+export const ETHERSCAN_URL = "https://explorer.bubstestnet.com/";

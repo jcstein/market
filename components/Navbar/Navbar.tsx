@@ -33,7 +33,7 @@ export function Navbar() {
             <Link href="/sell" className={styles.link}>
               Sell
             </Link>
-            <Link href="https://tarotestnet.com" className={styles.link}>
+            <Link href="https://bubstestnet.com" className={styles.link}>
               Faucet
             </Link>
           </div>

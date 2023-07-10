@@ -30,7 +30,7 @@ function NFTDisplay({ contractAddress }: { contractAddress: string }) {
 
   if (isLoading) return <div style={{ textAlign: "center" }}>⏳ loading...</div>;
   if (error || !nft) return <div style={{ textAlign: "center" }}>NFT not found</div>;
-  const taroExplorerLink = `https://explorer.tarotestnet.com/address/${contractAddress}`;
+  const bubsExplorerLink = `https://explorer.bubstestnet.com/address/${contractAddress}`;
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -52,8 +52,8 @@ function NFTDisplay({ contractAddress }: { contractAddress: string }) {
         <code style={{ textAlign: "center" }}>{metadata?.description || "No description available"}</code>
       )}
       <br />
-      <a style={{ textAlign: "center" }} href={taroExplorerLink} target="_blank" rel="noopener noreferrer">
-        <code>Click to view {metadata?.name} collection on Taro explorer 🧋</code>
+      <a style={{ textAlign: "center" }} href={bubsExplorerLink} target="_blank" rel="noopener noreferrer">
+        <code>Click to view {metadata?.name} collection on the Bubs explorer 🧋</code>
       </a>
       <br/>
     </div>
