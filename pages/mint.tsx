@@ -71,7 +71,7 @@ export default function Browse() {
       <p>
         Connect your wallet mint an NFT from a featured collection below.
       </p>
-      <NFTDisplay contractAddress="0xA5d477AcD014cEEe1A696E13d5ef2dfa0eF93021" />
+      <NFTDisplay contractAddress="0x50CD4628F482596F1e0863B2d48cefd8AB3f4C43" />
       {/* <NFTDisplay contractAddress="0xE779611601CAF368A2e82ef115f466061Cd11971" />
       <NFTDisplay contractAddress="0x7e9a8Bc504ACBED631ab7a7E8216FCe0156c9a3c" />
       <NFTDisplay contractAddress="0xD6C1f28eC5b025a618fd3733d7e6Af329a19508A" /> */}
