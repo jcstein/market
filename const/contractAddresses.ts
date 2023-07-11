@@ -7,7 +7,7 @@ export const NETWORK = BubsTestnet;
 
 // 2. The address of the marketplace V3 smart contract.
 // Deploy your own: https://thirdweb.com/thirdweb.eth/MarketplaceV3
-export const MARKETPLACE_ADDRESS = "0x3FEe36e0aa4A3e3E194Dbf089054811Ae104bBB0";
+export const MARKETPLACE_ADDRESS = "0xcCf42AD54ac72d64acE106d9B0DB727AC7058e33";
 
 // 3. The address of your NFT collection smart contract.
 export const NFT_COLLECTION_ADDRESS =
