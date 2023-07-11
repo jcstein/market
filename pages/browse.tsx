@@ -67,7 +67,7 @@ export default function Browse() {
 
   return (
     <Container maxWidth="lg">
-       <h1>Browse NFTs from the <code>liquid v1</code> collection.</h1>
+       <h1>Browse NFTs from the <code>bubs v1</code> collection.</h1>
       <NFTGrid
         data={data}
         isLoading={isLoading}
