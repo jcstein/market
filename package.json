@@ -15,7 +15,7 @@
     "@thirdweb-dev/react": "nightly",
     "@thirdweb-dev/sdk": "nightly",
     "ethers": "^5.7.2",
-    "next": "^13",
+    "next": "^15",
     "nextjs-progressbar": "^0.0.16",
     "react": "^18.2",
     "react-dom": "^18.2",
